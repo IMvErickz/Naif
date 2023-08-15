@@ -36,19 +36,33 @@ export default function Home() {
 
   ]
 
+  const centers = [
+    {
+      text: 'Ajudar o núcleo familiar a superar os obstáculos , romper o ciclo de vulnerabilidade e construir um futuro mais estável e digno para si e seus filhos.',
+      img: '/photos/2.svg'
+    },
+    {
+      text: 'Identificando a potencialidade de cada indivíduo, para o desenvolvimento individual de cada comunidade.',
+      img: '/photos/8.svg'
+    }
+  ]
+
   return (
     <main className='flex flex-col items-center justify-center bg-[#F6F6F7]'>
-      <Header />
       <Nav />
       <section className='w-full h-full flex flex-col items-center justify-center'>
         <div className='w-full flex flex-col items-center justify-center py-8'>
           <h1 className='font-arial text-black text-6xl font-bold'>Temos uma <span className='text-[#FF0000]'>Missão</span></h1>
           <div className='w-full flex flex-col items-center justify-center gap-y-20'>
             <div className='w-full flex flex-row items-center justify-center'>
-              <SideFieldRight />
+              <SideFieldRight
+                text='Promover a transformação social e o desenvolvimento de comunidades em situação de vulnerabilidade social e/ou econômico.'
+              />
             </div>
             <div className='w-full flex flex-row items-center justify-center'>
-              <SideFieldLeft />
+              <SideFieldLeft
+                text='Construir um ambiente de apoio e aprendizado, onde as famílias possam se desenvolver integralmente, recuperar sua autoestima e confiança, e se tornarem agentes de mudança positiva em suas próprias vidas e em suas comunidades.'
+              />
             </div>
           </div>
         </div>
@@ -58,15 +72,21 @@ export default function Home() {
           <h1 className='font-arial text-black text-6xl font-bold'>Essa é a nossa <span className='text-[#FF0000]'>Visão</span></h1>
         </div>
         <div className='w-full flex flex-row items-center justify-center'>
-          <CenterField />
-          <CenterField />
+          {centers.map(center => {
+            return (
+              <CenterField
+                text={center.text}
+                img={center.img}
+              />
+            )
+          })}
         </div>
       </section>
       <section className='w-full flex flex-col items-center justify-center'>
         <div className='w-full flex items-center justify-center py-8'>
           <h1 className='font-arial text-black text-6xl font-bold'>Esses são os nossos <span className='text-[#FF0000]'>Valores</span></h1>
         </div>
-        <div className='w-full items-center justify-center grid grid-flow-row grid-cols-2 gap-y-12'>
+        <div className='w-full items-center justify-center grid grid-flow-row grid-cols-2 gap-y-12 py-4'>
           {topics.map(topic => {
             return (
               <Topic
@@ -78,7 +98,6 @@ export default function Home() {
           })}
         </div>
       </section>
-      <Footer />
     </main>
   )
 }

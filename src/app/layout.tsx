@@ -1,6 +1,8 @@
+import { Header } from '@/components/Header/header'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Footer } from '@/components/Footer/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,7 +22,9 @@ export default function RootLayout({
       <header>
         <link rel="icon" href="/Logo.svg" />
       </header>
+      <Header />
       <body className={inter.className}>{children}</body>
+      <Footer />
     </html>
   )
 }

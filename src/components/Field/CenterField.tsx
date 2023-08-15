@@ -1,20 +1,25 @@
 import Image from "next/image";
 
-export function CenterField() {
+interface CenterProps {
+    text: string
+    img: string
+}
+
+export function CenterField(props: CenterProps) {
     return (
         <div className="w-full flex flex-col items-center justify-center gap-y-4">
-            <fieldset className="w-[646px] h-[294px] flex items-center justify-center bg-[#1D868C] rounded-lg">
-                <p className="font-arial text-white text-xl font-bold p-20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque dolorum veritatis harum facilis molestiae
-                    maiores velit enim.
-                    Aperiam fugit perferendis minus quia corporis et ipsum rem, incidunt culpa. Corporis?
+            <fieldset className="w-[646px] h-[264px] flex items-center justify-center bg-[#1D868C] rounded-lg">
+                <p className="font-arial text-white text-xl font-bold p-20 text-center">
+                    {props.text}
                 </p>
             </fieldset>
             <Image
-                src={'/photos/image 1.svg'}
+                src={props.img}
                 alt="Não encontrado"
                 priority
                 width={480}
                 height={480}
+                className="rounded-lg"
             />
         </div>
     )

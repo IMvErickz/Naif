@@ -1,25 +1,22 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { conection } from "../../../lib/email";
-import { NextApiRequest } from "next";
-import { z } from "zod";
+interface MailProps {
+    html: string
+    subject: string
+    Name: string
+}
 
-export async function POST(req: NextApiRequest) {
+export async function POST(req: NextRequest) {
 
-    if (req.method == 'POST') {
+    const emailSchema: MailProps = await req.json()
 
-        const emailSchema = z.object({
-            subject: z.string(),
-            html: z.string()
-        })
+    const { html, subject, Name } = emailSchema
 
-        const { html, subject } = emailSchema.parse(req.body)
+    const message = await conection.sendMail({
+        to: "erickspy2003@gmail.com",
+        subject: `De: ${Name}, Assunto: ${subject}`,
+        html: html,
+    })
 
-        const message = await conection.sendMail({
-            to: "erick.spbrasil@outlook.com",
-            subject,
-            html,
-        })
-
-        return NextResponse.json(message)
-    }
+    return NextResponse.json(message)
 }

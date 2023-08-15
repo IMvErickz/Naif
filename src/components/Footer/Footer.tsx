@@ -18,20 +18,23 @@ const contacts = [
 
 export function Footer() {
 
-    const [subject, setEmail] = useState('')
+    const [subject, setSubject] = useState('')
     const [html, setMessage] = useState('')
+    const [Name, setName] = useState('')
+
 
     async function handleEmail(event: FormEvent) {
         event.preventDefault()
 
         await axios.post('/api/email', {
             subject,
-            html
+            html,
+            Name
         })
     }
 
     return (
-        <footer className="w-full h-[328px] flex flex-col items-center justify-center bg-[#0F3F43] mt-4">
+        <footer className="w-full h-[368px] flex flex-col items-center justify-center bg-[#0F3F43]">
             <h1 className="text-white font-bold text-6xl font-arial pt-2">Contato</h1>
 
             <div className="w-full h-full flex flex-row items-center justify-center">
@@ -57,11 +60,16 @@ export function Footer() {
                     </div>
                 </section>
                 <form onSubmit={handleEmail} className="flex flex-col items-center justify-center gap-y-4">
-                    <h3 className="text-2xl font-arial">Deixe-nos uma mensagem</h3>
+                    <h3 className="text-2xl font-arial text-white">Deixe-nos uma mensagem</h3>
                     <input className="bg-[#F7F2DF] p-2 rounded-lg h-10 text-black outline-none"
-                        type="email"
-                        placeholder="Seu Email"
-                        onChange={event => setEmail(event.target.value)}
+                        type="text"
+                        placeholder="Seu Nome"
+                        onChange={event => setName(event.target.value)}
+                    />
+                    <input className="bg-[#F7F2DF] p-2 rounded-lg h-10 text-black outline-none"
+                        type="text"
+                        placeholder="Assunto"
+                        onChange={event => setSubject(event.target.value)}
                     />
                     <textarea
                         placeholder="Sua Mensagem"
