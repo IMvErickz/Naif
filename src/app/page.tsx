@@ -72,7 +72,7 @@ export default function Home() {
         <div className='w-full flex items-center justify-center py-8'>
           <h1 className='font-arial text-black text-6xl font-bold'>Essa é a nossa <span className='text-[#FF0000]'>Visão</span></h1>
         </div>
-        <div className='w-full flex flex-row items-center justify-center'>
+        <div className='w-full flex flex-col sm:flex-row items-center justify-center'>
           {centers.map(center => {
             return (
               <CenterField
@@ -87,7 +87,7 @@ export default function Home() {
         <div className='w-full flex items-center justify-center py-8'>
           <h1 className='font-arial text-black text-6xl font-bold'>Esses são os nossos <span className='text-[#FF0000]'>Valores</span></h1>
         </div>
-        <div className='w-full items-center justify-center grid grid-flow-row grid-cols-2 gap-y-12 py-4'>
+        <div className='w-full items-center justify-center flex flex-col sm:grid sm:grid-flow-row sm:grid-cols-2 gap-y-12 py-4'>
           {topics.map(topic => {
             return (
               <Topic

@@ -22,7 +22,7 @@ export default function Contact() {
                     Entre em contato conosco para promover umas das melhores ações para a vida das pessoas.
                 </h1>
             </section>
-            <section className="w-full flex flex-row items-center justify-center p-20">
+            <section className="w-full flex flex-col gap-y-4 sm:flex-row items-center justify-center p-20">
                 {contacts.map(contatc => {
                     return (
                         <div className="w-full flex flex-col items-center justify-center gap-x-96">

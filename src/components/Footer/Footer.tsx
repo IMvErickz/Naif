@@ -19,26 +19,11 @@ const contacts = [
 
 export function Footer() {
 
-    const [subject, setSubject] = useState('')
-    const [html, setMessage] = useState('')
-    const [Name, setName] = useState('')
-
-
-    async function handleEmail(event: FormEvent) {
-        event.preventDefault()
-
-        await axios.post('/api/email', {
-            subject,
-            html,
-            Name
-        })
-    }
-
     return (
-        <footer className="w-full h-[368px] flex flex-col items-center justify-center bg-[#0F3F43]">
+        <footer className="w-full sm:h-[368px] flex flex-col items-center justify-center bg-[#0F3F43]">
             <h1 className="text-white font-bold text-6xl font-arial pt-2">Contato</h1>
 
-            <div className="w-full h-full flex flex-row items-center justify-center">
+            <div className="w-full h-full flex sm:flex-row flex-col items-center justify-center">
                 <section className="flex flex-row items-center justify-center">
                     <div>
                         <Image

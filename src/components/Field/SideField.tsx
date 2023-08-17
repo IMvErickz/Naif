@@ -6,7 +6,7 @@ interface SideProps {
 
 export function SideFieldLeft(props: SideProps) {
     return (
-        <div className="w-full flex flex-row items-center justify-center gap-x-40 px-8">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-y-20 sm:gap-x-40 px-8">
             <Image
                 src={'/photos/6.svg'}
                 alt="Não encontrado"
@@ -15,7 +15,7 @@ export function SideFieldLeft(props: SideProps) {
                 height={480}
                 className="rounded-lg"
             />
-            <fieldset className="w-[724px] h-[240px] flex items-center justify-center bg-[#1D868C] rounded-lg">
+            <fieldset className="sm:w-[724px] sm:h-[240px] w-[400px] flex items-center justify-center bg-[#1D868C] rounded-lg">
                 <p className="font-arial text-white text-xl font-bold p-20">
                     {props.text}
                 </p>
@@ -26,8 +26,8 @@ export function SideFieldLeft(props: SideProps) {
 
 export function SideFieldRight(props: SideProps) {
     return (
-        <div className="w-full flex flex-row items-center justify-center gap-x-40 px-8">
-            <fieldset className="w-[724px] h-[240px] flex items-center justify-center bg-[#1D868C] rounded-lg">
+        <div className="w-full flex flex-col sm:flex-row items-center justify-center gap-y-20 sm:gap-x-40 px-8">
+            <fieldset className="sm:w-[724px] sm:h-[240px] w-[400px] flex items-center justify-center bg-[#1D868C] rounded-lg">
                 <p className="font-arial text-white text-xl font-bold p-20">
                     {props.text}
                 </p>

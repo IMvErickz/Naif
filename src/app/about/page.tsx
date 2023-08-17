@@ -16,7 +16,7 @@ export default function About() {
                 />
             </section>
             <section className="w-[600px] h-full flex flex-col items-center justify-center">
-                <p className="text-black font-bold text-2xl text-center font-arial">Somos a esperança para as famílias de todas as comunidades.</p>
+                <p className="text-black font-bold text-base sm:text-2xl text-center font-arial">Somos a esperança para as famílias de todas as comunidades.</p>
             </section>
             <Footer />
         </main>
