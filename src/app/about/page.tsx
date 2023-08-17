@@ -9,7 +9,7 @@ export default function About() {
             </head>
             <section className="w-full flex items-center justify-center">
                 <Image
-                    src={'/photos/logolarge.svg'}
+                    src={'/photos/LogoLarge.svg'}
                     alt="Não encontrado"
                     width={435}
                     height={472}
