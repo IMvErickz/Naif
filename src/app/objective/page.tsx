@@ -1,4 +1,6 @@
 import { ObjectiveCard } from "@/components/Field/Objective";
+import { Footer } from "@/components/Footer/Footer";
+import { Header } from "@/components/Header/header";
 
 export default function Objective() {
 
@@ -16,6 +18,7 @@ export default function Objective() {
 
     return (
         <main className="flex flex-col items-center justify-center bg-[#F6F6F7]">
+            <Header />
             <section className="w-full flex items-center justify-center p-2">
                 <h1 className="font-arial font-bold text-black text-6xl">Objetivo</h1>
             </section>
@@ -31,6 +34,7 @@ export default function Objective() {
             <section className="w-full flex items-center justify-center p-20">
                 <ObjectiveCard img="/photos/7.svg" text='Se você está disposto a fazer a mudança em prol de uma vida melhor para você e para todos, entre em contato conosco!' />
             </section>
+            <Footer />
         </main>
     )
 }

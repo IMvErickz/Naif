@@ -49,6 +49,7 @@ export default function Home() {
 
   return (
     <main className='flex flex-col items-center justify-center bg-[#F6F6F7]'>
+      <Header />
       <Nav />
       <section className='w-full h-full flex flex-col items-center justify-center'>
         <div className='w-full flex flex-col items-center justify-center py-8'>
@@ -98,6 +99,7 @@ export default function Home() {
           })}
         </div>
       </section>
+      <Footer />
     </main>
   )
 }
