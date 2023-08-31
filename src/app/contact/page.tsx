@@ -25,7 +25,7 @@ export default function Contact() {
             <section className="w-full flex flex-col gap-y-4 sm:flex-row items-center justify-center p-20">
                 {contacts.map(contatc => {
                     return (
-                        <div className="w-full flex flex-col items-center justify-center gap-x-96">
+                        <div key={contatc.labe} className="w-full flex flex-col items-center justify-center gap-x-96">
                             <label className="font-arial font-bold text-4xl">{contatc.labe}</label>
                             <span className="font-arial font-bold text-2xl">{contatc.value}</span>
                         </div>

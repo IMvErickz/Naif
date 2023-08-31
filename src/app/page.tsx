@@ -76,6 +76,7 @@ export default function Home() {
           {centers.map(center => {
             return (
               <CenterField
+                key={center.text}
                 text={center.text}
                 img={center.img}
               />
