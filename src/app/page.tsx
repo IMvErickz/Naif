@@ -3,6 +3,7 @@ import { SideFieldLeft, SideFieldRight } from '@/components/Field/SideField'
 import { Footer } from '@/components/Footer/Footer'
 import { Header } from '@/components/Header/header'
 import { Nav } from '@/components/Nav/Nav'
+import { Carrousel } from '@/components/Swiper/Swiper'
 import { Topic } from '@/components/Topic/Topic'
 import Image from 'next/image'
 
@@ -53,6 +54,10 @@ export default function Home() {
       <Nav />
       <section className='w-full h-full flex flex-col items-center justify-center'>
         <div className='w-full flex flex-col items-center justify-center py-8'>
+          <h1 className='text-black font-arial font-bold text-6xl'>Somos a <span className='text-[#FF0000]'>Esperança</span></h1>
+          <div className='w-[70%] py-4'>
+            <Carrousel />
+          </div>
           <h1 className='font-arial text-black text-6xl font-bold'>Temos uma <span className='text-[#FF0000]'>Missão</span></h1>
           <div className='w-full flex flex-col items-center justify-center gap-y-20'>
             <div className='w-full flex flex-row items-center justify-center'>
@@ -72,7 +77,7 @@ export default function Home() {
         <div className='w-full flex items-center justify-center py-8'>
           <h1 className='font-arial text-black text-6xl font-bold'>Essa é a nossa <span className='text-[#FF0000]'>Visão</span></h1>
         </div>
-        <div className='w-full flex flex-col sm:flex-row items-center justify-center'>
+        <div className='flex flex-col sm:flex-row items-center justify-center space-x-20'>
           {centers.map(center => {
             return (
               <CenterField
@@ -99,6 +104,17 @@ export default function Home() {
             )
           })}
         </div>
+      </section>
+      <section className='w-full flex flex-col items-center justify-center py-4'>
+        <div className='w-full flex items-center justify-center py-8'>
+          <h1 className='text-black font-bold font-arial text-6xl'>Nosso <span className='text-[#FF0000]'>Público Alvo</span></h1>
+        </div>
+        <Image
+          src={'/carrossel/capa site 3 1.svg'}
+          alt='Não Encontrado'
+          height={720}
+          width={1280}
+        />
       </section>
       <Footer />
     </main>

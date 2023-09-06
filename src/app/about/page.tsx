@@ -15,8 +15,14 @@ export default function About() {
                     height={472}
                 />
             </section>
-            <section className="w-[600px] h-full flex flex-col items-center justify-center">
+            <section className="w-[600px] h-full flex flex-col items-center justify-center py-20 space-y-8">
                 <p className="text-black font-bold text-base sm:text-2xl text-center font-arial">Somos a esperança para as famílias de todas as comunidades.</p>
+                <Image
+                    src={'/carrossel/OK 1.svg'}
+                    alt="Não encontrado"
+                    width={15180}
+                    height={8758}
+                />
             </section>
             <Footer />
         </main>
