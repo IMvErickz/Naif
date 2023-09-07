@@ -53,6 +53,15 @@ export default function Home() {
       <Header />
       <Nav />
       <section className='w-full h-full flex flex-col items-center justify-center'>
+        <div className='w-full flex items-center justify-center py-8'>
+          <Image
+            src={'/carrossel/capa NAIF 1.svg'}
+            alt='Não encontrado'
+            width={1200}
+            height={100}
+            className='rounded-lg'
+          />
+        </div>
         <div className='w-full flex flex-col items-center justify-center py-8'>
           <h1 className='text-black font-arial font-bold text-6xl'>Somos a <span className='text-[#FF0000]'>Esperança</span></h1>
           <div className='w-[70%] py-4'>

@@ -6,7 +6,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export function Carrousel() {
 
     const imgs = [
-        { img: '/carrossel/capa NAIF 1.svg' },
         { img: '/carrossel/capa site 2 1.svg' },
         { img: '/carrossel/1.svg' },
         { img: '/carrossel/2.svg' },
