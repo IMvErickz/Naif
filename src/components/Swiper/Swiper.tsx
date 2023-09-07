@@ -22,13 +22,16 @@ export function Carrousel() {
             {imgs.map(img => {
                 return (
                     <div className='w-full flex flex-col items-center justify-center'>
-                        <Image
+                        {/* <Image
+                            key={img.img}
                             src={img.img}
                             alt='Não encontrado'
                             width={0}
                             height={0}
                             className='rounded-lg'
-                        />
+                        /> */}
+
+                        <img src={img.img} key={img.img} alt="Não encontrado" width={'auto'} />
                     </div>
                 )
             })}
