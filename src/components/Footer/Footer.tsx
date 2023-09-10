@@ -3,7 +3,6 @@
 import axios from "axios";
 import Image from "next/image";
 import { FormEvent, useState } from "react";
-import { Form } from "./Form";
 
 const contacts = [
     {
@@ -20,7 +19,7 @@ const contacts = [
 export function Footer() {
 
     return (
-        <footer className="w-full sm:h-[368px] flex flex-col items-center justify-center bg-[#0F3F43]">
+        <footer className="w-full sm:h-[300px] flex flex-col items-center justify-center bg-[#0F3F43]">
             <h1 className="text-white font-bold text-6xl font-arial pt-2">Contato</h1>
 
             <div className="w-full h-full flex sm:flex-row flex-col items-center justify-center">
@@ -45,7 +44,6 @@ export function Footer() {
                         })}
                     </div>
                 </section>
-                <Form />
             </div>
         </footer>
     )

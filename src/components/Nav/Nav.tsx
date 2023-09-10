@@ -7,7 +7,7 @@ export function Nav() {
                 <span className="text-black font-arial text-2xl">Quem Somos</span>
             </Link>
             <Link href='/objective'>
-                <button className="bg-[#FF0000] text-xl font-arial font-bold rounded-lg w-[114px] h-[36px]">Objetivo</button>
+                <button className="bg-[#FF0000] mr-14 text-xl font-arial font-bold rounded-lg w-[114px] h-[36px]">Objetivo</button>
             </Link>
             <Link href='/contact'>
                 <span className="text-black font-arial text-2xl">Contato</span>
