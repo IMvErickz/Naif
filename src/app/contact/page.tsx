@@ -20,7 +20,7 @@ export default function Contact() {
             </header>
             <section className="w-[467px] h-full flex items-center justify-center py-20">
                 <h1 className="text-white font-arial font-bold text-2xl text-center">
-                    Entre em contato conosco para promover umas das melhores ações para a vida das pessoas.
+                    Entre em contato conosco para promover uma das melhores ações para a vida das pessoas.
                 </h1>
             </section>
             <section className="w-full h-full flex flex-col gap-y-4 sm:flex-row items-center justify-center p-20">
