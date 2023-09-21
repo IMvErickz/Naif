@@ -1,3 +1,4 @@
+import { EmailForm } from "@/components/Form/EmailForm";
 import { Header } from "@/components/Header/header";
 
 export default function Contact() {
@@ -14,7 +15,7 @@ export default function Contact() {
     ]
 
     return (
-        <main className="w-screen h-screen flex flex-col items-center justify-center bg-[#0F3F43]">
+        <main className="w-full h-full flex flex-col items-center justify-center bg-[#0F3F43]">
             <header className="w-full h-full flex items-center justify-center">
                 <Header />
             </header>
@@ -24,6 +25,7 @@ export default function Contact() {
                 </h1>
             </section>
             <section className="w-full h-full flex flex-col gap-y-4 sm:flex-row items-center justify-center p-20">
+                <EmailForm />
                 {contacts.map(contatc => {
                     return (
                         <div key={contatc.labe} className="w-full h-full flex flex-col items-center justify-center gap-x-96">

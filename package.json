@@ -10,13 +10,18 @@
     "email": "tsx src/app/api/seed.ts"
   },
   "dependencies": {
+    "@radix-ui/react-dropdown-menu": "^2.0.5",
     "@radix-ui/react-popover": "1.0.6",
     "@radix-ui/react-toast": "^1.1.4",
     "@types/node": "20.4.9",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.14",
+    "axios": "^1.5.0",
+    "dotenv": "^16.3.1",
+    "lucide-react": "^0.263.1",
     "next": "13.4.13",
+    "nodemailer": "^6.9.5",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -26,6 +31,7 @@
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@types/nodemailer": "^6.4.10",
     "tsx": "^3.12.7"
   }
 }
