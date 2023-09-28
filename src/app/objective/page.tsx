@@ -23,7 +23,7 @@ export default function Objective() {
             <section className="w-full flex items-center justify-center p-2">
                 <h1 className="font-arial font-bold text-black text-6xl">Objetivo</h1>
             </section>
-            <section className="w-full flex flex-col sm:flex-row items-center justify-center gap-x-32 py-4">
+            <section className="w-full flex flex-col xl:flex-row items-center justify-center gap-y-4 xl:gap-x-32 py-4">
                 {objectives.map(objective => {
                     if (objective.text[0]) {
                         return (

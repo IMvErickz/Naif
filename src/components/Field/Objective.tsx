@@ -20,9 +20,9 @@ export function ObjectiveCard(props: CardProps) {
                     src={props.img}
                     alt="Não encontrado"
                     priority
-                    width={480}
-                    height={480}
-                    className="rounded-lg"
+                    width={0}
+                    height={0}
+                    className="rounded-lg sm:w-[80%] w-[85%]"
                 />
             </div>
         </section>

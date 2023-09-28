@@ -57,17 +57,17 @@ export default function Home() {
           <Image
             src={'/carrossel/capa NAIF 1.svg'}
             alt='Não encontrado'
-            width={1200}
-            height={100}
-            className='rounded-lg'
+            width={0}
+            height={0}
+            className='rounded-lg w-[70%]'
           />
         </div>
         <div className='w-full flex flex-col items-center justify-center py-8'>
-          <h1 className='text-black font-arial font-bold text-6xl'>Somos a <span className='text-[#FF0000]'>Esperança</span></h1>
+          <h1 className='text-black font-arial text-center font-bold text-6xl'>Somos a <span className='text-[#FF0000]'>Esperança</span></h1>
           <div className='w-[70%] py-4'>
             <Carrousel />
           </div>
-          <h1 className='font-arial text-black text-6xl font-bold'>Temos uma <span className='text-[#FF0000]'>Missão</span></h1>
+          <h1 className='font-arial text-black text-6xl text-center font-bold'>Temos uma <span className='text-[#FF0000]'>Missão</span></h1>
           <div className='w-full flex flex-col items-center justify-center gap-y-20'>
             <div className='w-full flex flex-row items-center justify-center'>
               <SideFieldRight
@@ -84,9 +84,9 @@ export default function Home() {
       </section>
       <section className='w-full flex flex-col items-center justify-center'>
         <div className='w-full flex items-center justify-center py-8'>
-          <h1 className='font-arial text-black text-6xl font-bold'>Essa é a nossa <span className='text-[#FF0000]'>Visão</span></h1>
+          <h1 className='font-arial text-black text-6xl text-center font-bold'>Essa é a nossa <span className='text-[#FF0000]'>Visão</span></h1>
         </div>
-        <div className='flex flex-col sm:flex-row items-center justify-center space-x-20'>
+        <div className='xl:w-full flex flex-col xl:flex-row items-center justify-center'>
           {centers.map(center => {
             return (
               <CenterField
@@ -100,9 +100,9 @@ export default function Home() {
       </section>
       <section className='w-full flex flex-col items-center justify-center'>
         <div className='w-full flex items-center justify-center py-8'>
-          <h1 className='font-arial text-black text-6xl font-bold'>Esses são os nossos <span className='text-[#FF0000]'>Valores</span></h1>
+          <h1 className='font-arial text-black text-6xl text-center font-bold'>Esses são os nossos <span className='text-[#FF0000]'>Valores</span></h1>
         </div>
-        <div className='w-full items-center justify-center flex flex-col sm:grid sm:grid-flow-row sm:grid-cols-2 gap-y-12 py-4'>
+        <div className='w-full items-center justify-center flex flex-col md:grid md:grid-flow-row md:grid-cols-2 gap-y-12 py-4'>
           {topics.map(topic => {
             return (
               <Topic
@@ -116,7 +116,7 @@ export default function Home() {
       </section>
       <section className='w-full flex flex-col items-center justify-center py-4'>
         <div className='w-full flex items-center justify-center py-8'>
-          <h1 className='text-black font-bold font-arial text-6xl'>Nosso <span className='text-[#FF0000]'>Público Alvo</span></h1>
+          <h1 className='text-black font-bold font-arial text-center text-6xl'>Nosso <span className='text-[#FF0000]'>Público Alvo</span></h1>
         </div>
         <Image
           src={'/carrossel/capa site 3 1.svg'}

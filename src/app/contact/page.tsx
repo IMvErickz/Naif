@@ -19,8 +19,8 @@ export default function Contact() {
             <header className="w-full h-full flex items-center justify-center">
                 <Header />
             </header>
-            <section className="w-[467px] h-full flex items-center justify-center py-20">
-                <h1 className="text-white font-arial font-bold text-2xl text-center">
+            <section className="xl:w-[467px] w-full h-full flex items-center justify-center py-20 px-4">
+                <h1 className="text-white font-arial font-bold text-base xl:text-2xl text-center">
                     Entre em contato conosco para promover uma das melhores ações para a vida das pessoas.
                 </h1>
             </section>
@@ -28,9 +28,9 @@ export default function Contact() {
                 <EmailForm />
                 {contacts.map(contatc => {
                     return (
-                        <div key={contatc.labe} className="w-full h-full flex flex-col items-center justify-center gap-x-96">
-                            <label className="font-arial font-bold text-4xl">{contatc.labe}</label>
-                            <span className="font-arial font-bold text-2xl">{contatc.value}</span>
+                        <div key={contatc.labe} className="w-full h-full flex flex-col items-center justify-center gap-x-96 py-10">
+                            <label className="font-arial font-bold text-4xl text-center">{contatc.labe}</label>
+                            <span className="font-arial font-bold text-2xl text-center">{contatc.value}</span>
                         </div>
                     )
                 })}
