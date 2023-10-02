@@ -19,12 +19,12 @@ export default function Contact() {
             <header className="w-full h-full flex items-center justify-center">
                 <Header />
             </header>
-            <section className="xl:w-[467px] w-full h-full flex items-center justify-center py-20 px-4">
-                <h1 className="text-white font-arial font-bold text-base xl:text-2xl text-center">
+            <section className="xl:w-[467px] w-full h-full flex items-center justify-center py-10 px-4">
+                <h1 className="text-white font-arial font-bold text-xl xl:text-2xl text-center">
                     Entre em contato conosco para promover uma das melhores ações para a vida das pessoas.
                 </h1>
             </section>
-            <section className="w-full h-full flex flex-col gap-y-4 sm:flex-row items-center justify-center p-20">
+            <section className="w-full h-full flex flex-col gap-y-4 sm:flex-row items-center justify-center py-10 px-20">
                 <EmailForm />
                 {contacts.map(contatc => {
                     return (

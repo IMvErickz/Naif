@@ -35,8 +35,8 @@ export function Footer() {
                         {contacts.map(contact => {
                             return (
                                 <div key={contact.label} className="flex flex-row gap-x-2">
-                                    <label htmlFor="" className="font-arial text-white text-sm sm:text-2xl">{`${contact.label}: `}</label>
-                                    <span className="font-arial text-white text-sm sm:text-2xl">{contact.value}</span>
+                                    <label htmlFor="" className="font-arial text-white text-lg sm:text-2xl">{`${contact.label}: `}</label>
+                                    <span className="font-arial text-white text-lg sm:text-2xl">{contact.value}</span>
                                 </div>
                             )
                         })}

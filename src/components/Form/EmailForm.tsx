@@ -20,7 +20,7 @@ export function EmailForm() {
     }
 
     return (
-        <form onSubmit={handleSendEmail} className="flex flex-col items-center justify-center space-y-4">
+        <form onSubmit={handleSendEmail} className="flex flex-col items-center justify-center space-y-8">
             <h1 className="text-2xl font-semibold text-center">Nos envie uma mensagem</h1>
             <input placeholder="Nome" type="text" onChange={event => setName(event.target.value)} className="bg-[#DBDBDC] rounded outline-none text-black p-2 placeholder:text-zinc-700" />
             <input placeholder="Assunto" type="text" onChange={event => setSubject(event.target.value)} className="bg-[#DBDBDC] rounded outline-none text-black p-2 placeholder:text-zinc-700" />
